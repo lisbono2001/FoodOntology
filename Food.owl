@@ -1,0 +1,1708 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/puvanagroup/food"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/puvanagroup/food">
+    <Prefix name="" IRI="http://www.semanticweb.org/puvanagroup/food"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="food" IRI="http://www.semanticweb.org/puvanagroup/food#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Beverage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bread"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Burgur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CannedFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChildFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Edible"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fastfood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Food"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FoodProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FriedChicken"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FriedPotato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FrozenFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Garnish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HalalFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighCalFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ingredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KetoFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowCalFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Menu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonVeganFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NormalFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nutrition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreparedFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Salad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sandwich"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sauce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seafood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnPreparedFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VeganFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vegetable"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBeverage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFoodInMenu"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFoodProcess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNutrition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNutritionInFood"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNutritionInMenu"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOnlyVeggie"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPrepared"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasQuickPrepareTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTotalCal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTotalPrice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Age"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AllPurposeFlour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Assemble"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bake"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Basil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beef"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BeefSteak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BeefSteakFries"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BeefSteakMashpotato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BlackPepper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Boil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BrownRice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Butterhead"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CaesarSalad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carbohydrate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carrot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChickenMeat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChickenNugget"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChiliSauce"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cola"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CowMilk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Egg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fiber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fish"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FrenchBread"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FriedChicken"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FriedSoyTofu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fries"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Garlic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Iceberg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JasmineRice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KaiJuJai"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MashPotato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mayonnaise"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mushroom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MushroomSoup"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OliveOil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OysterSauce"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pork"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PorkOil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PorkSteak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Potato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Protein"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Radicchio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RedCoral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rocket"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Romaine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RoseMarry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Salt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shrimp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Soda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SoyMilk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SoySauce"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Squid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stream"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sugar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TempuraFlour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tomato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TomatoSauce"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VegetableOil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vitamin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Water"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WheatBread"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WhiteBread"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Food"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasFoodProcess"/>
+                <Class IRI="#FoodProcess"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#hasIngredient"/>
+                <Class IRI="#Ingredient"/>
+            </ObjectMinCardinality>
+            <DataExactCardinality cardinality="1">
+                <DataProperty IRI="#hasPrepared"/>
+                <Datatype abbreviatedIRI="xsd:boolean"/>
+            </DataExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Nutrition"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Carbohydrate"/>
+            <NamedIndividual IRI="#Fat"/>
+            <NamedIndividual IRI="#Fiber"/>
+            <NamedIndividual IRI="#Protein"/>
+            <NamedIndividual IRI="#Vitamin"/>
+            <NamedIndividual IRI="#Water"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#VeganFood"/>
+        <ObjectExactCardinality cardinality="0">
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Meat"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Beverage"/>
+        <Class IRI="#Edible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bread"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Burgur"/>
+        <Class IRI="#Fastfood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CannedFood"/>
+        <Class IRI="#PreparedFood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChildFood"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fastfood"/>
+        <Class IRI="#UnPreparedFood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flour"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flour"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasNutrition"/>
+            <NamedIndividual IRI="#Carbohydrate"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <Class IRI="#Edible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FriedChicken"/>
+        <Class IRI="#Fastfood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FriedPotato"/>
+        <Class IRI="#Fastfood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FrozenFood"/>
+        <Class IRI="#PreparedFood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Garnish"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Garnish"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasNutrition"/>
+            <NamedIndividual IRI="#Vitamin"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HalalFood"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighCalFood"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ingredient"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasNutrition"/>
+            <Class IRI="#Nutrition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KetoFood"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowCalFood"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meat"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meat"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasNutrition"/>
+            <NamedIndividual IRI="#Protein"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Menu"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasTotalCal"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Menu"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasTotalPrice"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonVeganFood"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonVeganFood"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasOnlyVeggie"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NormalFood"/>
+        <Class IRI="#UnPreparedFood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oil"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oil"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasNutrition"/>
+            <NamedIndividual IRI="#Fat"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreparedFood"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreparedFood"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasPrepared"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rice"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salad"/>
+        <Class IRI="#Fastfood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sandwich"/>
+        <Class IRI="#Fastfood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sauce"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seafood"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seafood"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasNutrition"/>
+            <NamedIndividual IRI="#Protein"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnPreparedFood"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnPreparedFood"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasPrepared"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VeganFood"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vegetable"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vegetable"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasNutrition"/>
+            <NamedIndividual IRI="#Fiber"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#NonVeganFood"/>
+        <Class IRI="#VeganFood"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#FoodProcess"/>
+        <NamedIndividual IRI="#Age"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Flour"/>
+        <NamedIndividual IRI="#AllPurposeFlour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FoodProcess"/>
+        <NamedIndividual IRI="#Assemble"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FoodProcess"/>
+        <NamedIndividual IRI="#Bake"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#Basil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meat"/>
+        <NamedIndividual IRI="#Beef"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="#BeefSteak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Menu"/>
+        <NamedIndividual IRI="#BeefSteakFries"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Menu"/>
+        <NamedIndividual IRI="#BeefSteakMashpotato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Garnish"/>
+        <NamedIndividual IRI="#BlackPepper"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FoodProcess"/>
+        <NamedIndividual IRI="#Boil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rice"/>
+        <NamedIndividual IRI="#BrownRice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#Butterhead"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="#CaesarSalad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nutrition"/>
+        <NamedIndividual IRI="#Carbohydrate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#Carrot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meat"/>
+        <NamedIndividual IRI="#ChickenMeat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="#ChickenNugget"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sauce"/>
+        <NamedIndividual IRI="#ChiliSauce"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beverage"/>
+        <NamedIndividual IRI="#Cola"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meat"/>
+        <NamedIndividual IRI="#CowMilk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meat"/>
+        <NamedIndividual IRI="#Egg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nutrition"/>
+        <NamedIndividual IRI="#Fat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nutrition"/>
+        <NamedIndividual IRI="#Fiber"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Seafood"/>
+        <NamedIndividual IRI="#Fish"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bread"/>
+        <NamedIndividual IRI="#FrenchBread"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="#FriedChicken"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="#FriedSoyTofu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="#Fries"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FoodProcess"/>
+        <NamedIndividual IRI="#Fry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#Garlic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FoodProcess"/>
+        <NamedIndividual IRI="#Grill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#Iceberg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rice"/>
+        <NamedIndividual IRI="#JasmineRice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Menu"/>
+        <NamedIndividual IRI="#KaiJuJai"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="#MashPotato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sauce"/>
+        <NamedIndividual IRI="#Mayonnaise"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#Mushroom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="#MushroomSoup"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Oil"/>
+        <NamedIndividual IRI="#OliveOil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sauce"/>
+        <NamedIndividual IRI="#OysterSauce"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Meat"/>
+        <NamedIndividual IRI="#Pork"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Oil"/>
+        <NamedIndividual IRI="#PorkOil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#Potato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nutrition"/>
+        <NamedIndividual IRI="#Protein"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#Radicchio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#RedCoral"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#Rocket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#Romaine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#RoseMarry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Garnish"/>
+        <NamedIndividual IRI="#Salt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Seafood"/>
+        <NamedIndividual IRI="#Shrimp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beverage"/>
+        <NamedIndividual IRI="#Soda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#SoyMilk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sauce"/>
+        <NamedIndividual IRI="#SoySauce"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Seafood"/>
+        <NamedIndividual IRI="#Squid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FoodProcess"/>
+        <NamedIndividual IRI="#Stream"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Garnish"/>
+        <NamedIndividual IRI="#Sugar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Flour"/>
+        <NamedIndividual IRI="#TempuraFlour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Vegetable"/>
+        <NamedIndividual IRI="#Tomato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sauce"/>
+        <NamedIndividual IRI="#TomatoSauce"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Oil"/>
+        <NamedIndividual IRI="#VegetableOil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nutrition"/>
+        <NamedIndividual IRI="#Vitamin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nutrition"/>
+        <NamedIndividual IRI="#Water"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bread"/>
+        <NamedIndividual IRI="#WheatBread"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bread"/>
+        <NamedIndividual IRI="#WhiteBread"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFoodProcess"/>
+        <NamedIndividual IRI="#BeefSteak"/>
+        <NamedIndividual IRI="#Grill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#BeefSteak"/>
+        <NamedIndividual IRI="#Beef"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#BeefSteak"/>
+        <NamedIndividual IRI="#BlackPepper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#BeefSteak"/>
+        <NamedIndividual IRI="#RoseMarry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#BeefSteak"/>
+        <NamedIndividual IRI="#Salt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFoodInMenu"/>
+        <NamedIndividual IRI="#BeefSteakFries"/>
+        <NamedIndividual IRI="#BeefSteak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFoodInMenu"/>
+        <NamedIndividual IRI="#BeefSteakFries"/>
+        <NamedIndividual IRI="#Fries"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFoodInMenu"/>
+        <NamedIndividual IRI="#BeefSteakMashpotato"/>
+        <NamedIndividual IRI="#BeefSteak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFoodInMenu"/>
+        <NamedIndividual IRI="#BeefSteakMashpotato"/>
+        <NamedIndividual IRI="#MashPotato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFoodProcess"/>
+        <NamedIndividual IRI="#CaesarSalad"/>
+        <NamedIndividual IRI="#Assemble"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#CaesarSalad"/>
+        <NamedIndividual IRI="#Egg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#CaesarSalad"/>
+        <NamedIndividual IRI="#OliveOil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#CaesarSalad"/>
+        <NamedIndividual IRI="#Romaine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFoodProcess"/>
+        <NamedIndividual IRI="#ChickenNugget"/>
+        <NamedIndividual IRI="#Fry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#ChickenNugget"/>
+        <NamedIndividual IRI="#AllPurposeFlour"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#ChickenNugget"/>
+        <NamedIndividual IRI="#ChickenMeat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#ChickenNugget"/>
+        <NamedIndividual IRI="#VegetableOil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFoodProcess"/>
+        <NamedIndividual IRI="#FriedChicken"/>
+        <NamedIndividual IRI="#Fry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#FriedChicken"/>
+        <NamedIndividual IRI="#AllPurposeFlour"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#FriedChicken"/>
+        <NamedIndividual IRI="#ChickenMeat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#FriedChicken"/>
+        <NamedIndividual IRI="#VegetableOil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFoodProcess"/>
+        <NamedIndividual IRI="#FriedSoyTofu"/>
+        <NamedIndividual IRI="#Fry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#FriedSoyTofu"/>
+        <NamedIndividual IRI="#SoyMilk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFoodProcess"/>
+        <NamedIndividual IRI="#Fries"/>
+        <NamedIndividual IRI="#Fry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#Fries"/>
+        <NamedIndividual IRI="#AllPurposeFlour"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#Fries"/>
+        <NamedIndividual IRI="#Potato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#Fries"/>
+        <NamedIndividual IRI="#VegetableOil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFoodInMenu"/>
+        <NamedIndividual IRI="#KaiJuJai"/>
+        <NamedIndividual IRI="#ChickenNugget"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFoodInMenu"/>
+        <NamedIndividual IRI="#KaiJuJai"/>
+        <NamedIndividual IRI="#FriedChicken"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFoodInMenu"/>
+        <NamedIndividual IRI="#KaiJuJai"/>
+        <NamedIndividual IRI="#Fries"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFoodInMenu"/>
+        <NamedIndividual IRI="#KaiJuJai"/>
+        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFoodProcess"/>
+        <NamedIndividual IRI="#MashPotato"/>
+        <NamedIndividual IRI="#Boil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#MashPotato"/>
+        <NamedIndividual IRI="#CowMilk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#MashPotato"/>
+        <NamedIndividual IRI="#Potato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFoodProcess"/>
+        <NamedIndividual IRI="#MushroomSoup"/>
+        <NamedIndividual IRI="#Boil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#MushroomSoup"/>
+        <NamedIndividual IRI="#CowMilk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#MushroomSoup"/>
+        <NamedIndividual IRI="#Mushroom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFoodProcess"/>
+        <NamedIndividual IRI="#PorkSteak"/>
+        <NamedIndividual IRI="#Grill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#PorkSteak"/>
+        <NamedIndividual IRI="#BlackPepper"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#PorkSteak"/>
+        <NamedIndividual IRI="#Pork"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#PorkSteak"/>
+        <NamedIndividual IRI="#RoseMarry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#PorkSteak"/>
+        <NamedIndividual IRI="#Salt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFoodProcess"/>
+        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
+        <NamedIndividual IRI="#Fry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
+        <NamedIndividual IRI="#AllPurposeFlour"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
+        <NamedIndividual IRI="#ChickenMeat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
+        <NamedIndividual IRI="#VegetableOil"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCal"/>
+        <NamedIndividual IRI="#BeefSteak"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">300.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrepared"/>
+        <NamedIndividual IRI="#BeefSteak"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#BeefSteak"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">400.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCal"/>
+        <NamedIndividual IRI="#CaesarSalad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">70.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrepared"/>
+        <NamedIndividual IRI="#CaesarSalad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#CaesarSalad"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">150.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCal"/>
+        <NamedIndividual IRI="#ChickenNugget"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">150.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrepared"/>
+        <NamedIndividual IRI="#ChickenNugget"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#ChickenNugget"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">150.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCal"/>
+        <NamedIndividual IRI="#FriedChicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">200.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#FriedChicken"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">100.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCal"/>
+        <NamedIndividual IRI="#FriedSoyTofu"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">120.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOnlyVeggie"/>
+        <NamedIndividual IRI="#FriedSoyTofu"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrepared"/>
+        <NamedIndividual IRI="#FriedSoyTofu"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#FriedSoyTofu"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">150.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCal"/>
+        <NamedIndividual IRI="#Fries"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">220.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasOnlyVeggie"/>
+        <NamedIndividual IRI="#Fries"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Fries"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">180.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCal"/>
+        <NamedIndividual IRI="#MashPotato"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">250.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrepared"/>
+        <NamedIndividual IRI="#MashPotato"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#MashPotato"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">150.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCal"/>
+        <NamedIndividual IRI="#MushroomSoup"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">180.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrepared"/>
+        <NamedIndividual IRI="#MushroomSoup"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#MushroomSoup"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">200.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCal"/>
+        <NamedIndividual IRI="#PorkSteak"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">250.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrepared"/>
+        <NamedIndividual IRI="#PorkSteak"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#PorkSteak"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">200.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCal"/>
+        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">180.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrepared"/>
+        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">150.0</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBeverage"/>
+        <Class IRI="#Menu"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFoodInMenu"/>
+        <Class IRI="#Menu"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFoodProcess"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNutrition"/>
+        <Class IRI="#Ingredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNutritionInFood"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNutritionInMenu"/>
+        <Class IRI="#Menu"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBeverage"/>
+        <Class IRI="#Beverage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFoodInMenu"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFoodProcess"/>
+        <Class IRI="#FoodProcess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <Class IRI="#Ingredient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNutrition"/>
+        <Class IRI="#Nutrition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNutritionInFood"/>
+        <Class IRI="#Nutrition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNutritionInMenu"/>
+        <Class IRI="#Nutrition"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCal"/>
+        <Class IRI="#Edible"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasOnlyVeggie"/>
+        <Class IRI="#Food"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPrepared"/>
+        <Class IRI="#Food"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPrice"/>
+        <Class IRI="#Edible"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasQuickPrepareTime"/>
+        <Class IRI="#Food"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTotalCal"/>
+        <Class IRI="#Menu"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTotalPrice"/>
+        <Class IRI="#Menu"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCal"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasOnlyVeggie"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPrepared"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPrice"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasQuickPrepareTime"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTotalCal"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTotalPrice"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AllNutritionsFood</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Food"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInFood"/>
+                <Variable IRI="#f"/>
+                <NamedIndividual IRI="#Carbohydrate"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInFood"/>
+                <Variable IRI="#f"/>
+                <NamedIndividual IRI="#Fat"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInFood"/>
+                <Variable IRI="#f"/>
+                <NamedIndividual IRI="#Fiber"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInFood"/>
+                <Variable IRI="#f"/>
+                <NamedIndividual IRI="#Protein"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInFood"/>
+                <Variable IRI="#f"/>
+                <NamedIndividual IRI="#Vitamin"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInFood"/>
+                <Variable IRI="#f"/>
+                <NamedIndividual IRI="#Water"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head/>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>FriedChicken</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasFoodProcess"/>
+                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#f"/>
+                <NamedIndividual IRI="#Fry"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIngredient"/>
+                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#f"/>
+                <NamedIndividual IRI="#ChickenMeat"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Food"/>
+                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#f"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#FriedChicken"/>
+                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#f"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>NonVeganFood</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Food"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIngredient"/>
+                <Variable IRI="#f"/>
+                <Variable IRI="#i"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Meat"/>
+                <Variable IRI="#i"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#NonVeganFood"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>NonVeganFood2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Food"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIngredient"/>
+                <Variable IRI="#f"/>
+                <Variable IRI="#i"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Seafood"/>
+                <Variable IRI="#i"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#NonVeganFood"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>hasNutritionInFood</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Food"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIngredient"/>
+                <Variable IRI="#f"/>
+                <Variable IRI="#i"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutrition"/>
+                <Variable IRI="#i"/>
+                <Variable IRI="#n"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInFood"/>
+                <Variable IRI="#f"/>
+                <Variable IRI="#n"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>HighCalFood</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Food"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasCal"/>
+                <Variable IRI="#f"/>
+                <Variable IRI="#c"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="#c"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#HighCalFood"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>LowCalFood</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Food"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasCal"/>
+                <Variable IRI="#f"/>
+                <Variable IRI="#c"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="#c"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#LowCalFood"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>VeganFood</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Food"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasOnlyVeggie"/>
+                <Variable IRI="#f"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#VeganFood"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>hasMenuNutrition</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Menu"/>
+                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#m"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasFoodInMenu"/>
+                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#m"/>
+                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#f"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIngredient"/>
+                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#f"/>
+                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#i"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutrition"/>
+                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#i"/>
+                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#n"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInMenu"/>
+                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#m"/>
+                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#n"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
