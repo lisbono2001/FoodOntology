@@ -14,7 +14,7 @@
     <Prefix name="food" IRI="http://www.semanticweb.org/puvanagroup/food#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#AllNutritionsFood"/>
+        <Class IRI="#AllNutritionsMenu"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Beverage"/>
@@ -29,7 +29,7 @@
         <Class IRI="#CannedFood"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ChildFood"/>
+        <Class IRI="#ChildMenu"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Edible"/>
@@ -59,16 +59,10 @@
         <Class IRI="#Garnish"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#HalalFood"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#HighCalFood"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Ingredient"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#KetoFood"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LowCalFood"/>
@@ -78,6 +72,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Menu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonHalalFood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonKetoFood"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NonVeganFood"/>
@@ -116,6 +116,9 @@
         <Class IRI="#Vegetable"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Water"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasEdibleInMenu"/>
     </Declaration>
     <Declaration>
@@ -128,7 +131,7 @@
         <ObjectProperty IRI="#hasNutrition"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasNutritionInFood"/>
+        <ObjectProperty IRI="#hasNutritionInEdible"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasNutritionInMenu"/>
@@ -242,6 +245,9 @@
         <NamedIndividual IRI="#Garlic"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#GarlicFriedRice"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Grill"/>
     </Declaration>
     <Declaration>
@@ -263,6 +269,9 @@
         <NamedIndividual IRI="#MegaLean"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#MineralWater"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Mushroom"/>
     </Declaration>
     <Declaration>
@@ -282,6 +291,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PorkSteak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PorkSteakWithGarlicRice"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Potato"/>
@@ -359,8 +371,8 @@
         <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="#AllNutritionsFood"/>
-        <Class IRI="#ChildFood"/>
+        <Class IRI="#AllNutritionsMenu"/>
+        <Class IRI="#ChildMenu"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Nutrition"/>
@@ -370,16 +382,22 @@
             <NamedIndividual IRI="#Fiber"/>
             <NamedIndividual IRI="#Protein"/>
             <NamedIndividual IRI="#Vitamin"/>
-            <NamedIndividual IRI="#Water"/>
         </ObjectOneOf>
     </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="#AllNutritionsFood"/>
-        <Class IRI="#Food"/>
+        <Class IRI="#AllNutritionsMenu"/>
+        <Class IRI="#Menu"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Beverage"/>
         <Class IRI="#Edible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beverage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasNutrition"/>
+            <Class IRI="#Water"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Bread"/>
@@ -394,12 +412,33 @@
         <Class IRI="#PreparedFood"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ChildFood"/>
-        <Class IRI="#Food"/>
+        <Class IRI="#ChildMenu"/>
+        <Class IRI="#Menu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Edible"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Edible"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Fastfood"/>
         <Class IRI="#UnPreparedFood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fastfood"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasQuickPrepareTime"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Flour"/>
@@ -425,23 +464,9 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Food"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Food"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#hasFoodProcess"/>
             <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Food"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -482,10 +507,6 @@
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#HalalFood"/>
-        <Class IRI="#Food"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#HighCalFood"/>
         <Class IRI="#Food"/>
     </SubClassOf>
@@ -497,8 +518,11 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#KetoFood"/>
-        <Class IRI="#Food"/>
+        <Class IRI="#Ingredient"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasNutrition"/>
+            <Class IRI="#Nutrition"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LowCalFood"/>
@@ -516,12 +540,41 @@
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Menu"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEdibleInMenu"/>
+            <Class IRI="#Edible"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Menu"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasEdibleInMenu"/>
+            <Class IRI="#Edible"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonHalalFood"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonKetoFood"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#NonVeganFood"/>
         <Class IRI="#Food"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NormalFood"/>
         <Class IRI="#UnPreparedFood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NormalFood"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasQuickPrepareTime"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Oil"/>
@@ -550,6 +603,13 @@
         <Class IRI="#Ingredient"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Rice"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasNutrition"/>
+            <NamedIndividual IRI="#Carbohydrate"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Salad"/>
         <Class IRI="#Fastfood"/>
     </SubClassOf>
@@ -560,6 +620,13 @@
     <SubClassOf>
         <Class IRI="#Sauce"/>
         <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sauce"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasNutrition"/>
+            <NamedIndividual IRI="#Vitamin"/>
+        </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Seafood"/>
@@ -578,10 +645,24 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UnPreparedFood"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasQuickPrepareTime"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnPreparedFood"/>
         <DataHasValue>
             <DataProperty IRI="#hasPrepared"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
         </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnPreparedFood"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasQuickPrepareTime"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Vegetable"/>
@@ -592,6 +673,17 @@
         <ObjectHasValue>
             <ObjectProperty IRI="#hasNutrition"/>
             <NamedIndividual IRI="#Fiber"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasNutrition"/>
+            <NamedIndividual IRI="#Vitamin"/>
         </ObjectHasValue>
     </SubClassOf>
     <ClassAssertion>
@@ -727,6 +819,10 @@
         <NamedIndividual IRI="#Garlic"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Food"/>
+        <NamedIndividual IRI="#GarlicFriedRice"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#FoodProcess"/>
         <NamedIndividual IRI="#Grill"/>
     </ClassAssertion>
@@ -737,6 +833,10 @@
     <ClassAssertion>
         <Class IRI="#Rice"/>
         <NamedIndividual IRI="#JasmineRice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChildMenu"/>
+        <NamedIndividual IRI="#KaiJuJai"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Menu"/>
@@ -753,6 +853,10 @@
     <ClassAssertion>
         <Class IRI="#Menu"/>
         <NamedIndividual IRI="#MegaLean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Water"/>
+        <NamedIndividual IRI="#MineralWater"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Vegetable"/>
@@ -781,6 +885,10 @@
     <ClassAssertion>
         <Class IRI="#Food"/>
         <NamedIndividual IRI="#PorkSteak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Menu"/>
+        <NamedIndividual IRI="#PorkSteakWithGarlicRice"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Vegetable"/>
@@ -867,7 +975,7 @@
         <NamedIndividual IRI="#Vitamin"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Nutrition"/>
+        <Class IRI="#Water"/>
         <NamedIndividual IRI="#Water"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -878,11 +986,6 @@
         <Class IRI="#Bread"/>
         <NamedIndividual IRI="#WhiteBread"/>
     </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasEdibleInMenu"/>
-        <NamedIndividual IRI="#BeefSteak"/>
-        <NamedIndividual IRI="#BeefSteak"/>
-    </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasFoodProcess"/>
         <NamedIndividual IRI="#BeefSteak"/>
@@ -979,6 +1082,16 @@
         <NamedIndividual IRI="#VegetableOil"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#Cola"/>
+        <NamedIndividual IRI="#Sugar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#Cola"/>
+        <NamedIndividual IRI="#Water"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasFoodProcess"/>
         <NamedIndividual IRI="#FriedChicken"/>
         <NamedIndividual IRI="#Fry"/>
@@ -1027,6 +1140,16 @@
         <ObjectProperty IRI="#hasIngredient"/>
         <NamedIndividual IRI="#Fries"/>
         <NamedIndividual IRI="#VegetableOil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#GarlicFriedRice"/>
+        <NamedIndividual IRI="#Garlic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#GarlicFriedRice"/>
+        <NamedIndividual IRI="#JasmineRice"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEdibleInMenu"/>
@@ -1122,6 +1245,16 @@
         <ObjectProperty IRI="#hasIngredient"/>
         <NamedIndividual IRI="#PorkSteak"/>
         <NamedIndividual IRI="#Salt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEdibleInMenu"/>
+        <NamedIndividual IRI="#PorkSteakWithGarlicRice"/>
+        <NamedIndividual IRI="#GarlicFriedRice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <NamedIndividual IRI="#Soda"/>
+        <NamedIndividual IRI="#Water"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasFoodProcess"/>
@@ -1245,6 +1378,26 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCal"/>
+        <NamedIndividual IRI="#GarlicFriedRice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">150.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrepared"/>
+        <NamedIndividual IRI="#GarlicFriedRice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#GarlicFriedRice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">50.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasQuickPrepareTime"/>
+        <NamedIndividual IRI="#GarlicFriedRice"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCal"/>
         <NamedIndividual IRI="#MashPotato"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">250.0</Literal>
     </DataPropertyAssertion>
@@ -1287,6 +1440,16 @@
         <DataProperty IRI="#hasPrice"/>
         <NamedIndividual IRI="#PorkSteak"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">200.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCal"/>
+        <NamedIndividual IRI="#Soda"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Soda"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">30.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCal"/>
@@ -1309,9 +1472,6 @@
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasNutrition"/>
     </FunctionalObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#hasEdibleInMenu"/>
-    </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#hasFoodProcess"/>
     </AsymmetricObjectProperty>
@@ -1322,23 +1482,11 @@
         <ObjectProperty IRI="#hasNutrition"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#hasNutritionInFood"/>
+        <ObjectProperty IRI="#hasNutritionInEdible"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#hasNutritionInMenu"/>
     </AsymmetricObjectProperty>
-    <TransitiveObjectProperty>
-        <ObjectProperty IRI="#hasEdibleInMenu"/>
-    </TransitiveObjectProperty>
-    <TransitiveObjectProperty>
-        <ObjectProperty IRI="#hasFoodProcess"/>
-    </TransitiveObjectProperty>
-    <TransitiveObjectProperty>
-        <ObjectProperty IRI="#hasIngredient"/>
-    </TransitiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#hasEdibleInMenu"/>
-    </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#hasFoodProcess"/>
     </IrreflexiveObjectProperty>
@@ -1349,7 +1497,7 @@
         <ObjectProperty IRI="#hasNutrition"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#hasNutritionInFood"/>
+        <ObjectProperty IRI="#hasNutritionInEdible"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#hasNutritionInMenu"/>
@@ -1364,15 +1512,15 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasIngredient"/>
-        <Class IRI="#Food"/>
+        <Class IRI="#Edible"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasNutrition"/>
         <Class IRI="#Ingredient"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasNutritionInFood"/>
-        <Class IRI="#Food"/>
+        <ObjectProperty IRI="#hasNutritionInEdible"/>
+        <Class IRI="#Edible"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasNutritionInMenu"/>
@@ -1395,7 +1543,7 @@
         <Class IRI="#Nutrition"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasNutritionInFood"/>
+        <ObjectProperty IRI="#hasNutritionInEdible"/>
         <Class IRI="#Nutrition"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -1434,6 +1582,105 @@
         <DataProperty IRI="#hasQuickPrepareTime"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>hasNutritionInEdible</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Edible"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIngredient"/>
+                <Variable IRI="#f"/>
+                <Variable IRI="#i"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutrition"/>
+                <Variable IRI="#i"/>
+                <Variable IRI="#n"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInEdible"/>
+                <Variable IRI="#f"/>
+                <Variable IRI="#n"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>NonHalalFood</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Food"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasIngredient"/>
+                <Variable IRI="#f"/>
+                <NamedIndividual IRI="#Pork"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#NonHalalFood"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>NonKetoFood</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Food"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInEdible"/>
+                <Variable IRI="#f"/>
+                <NamedIndividual IRI="#Carbohydrate"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#NonKetoFood"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
     <DLSafeRule>
         <Annotation>
             <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
@@ -1551,99 +1798,6 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>hasNutritionInFood</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Food"/>
-                <Variable IRI="#f"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasIngredient"/>
-                <Variable IRI="#f"/>
-                <Variable IRI="#i"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasNutrition"/>
-                <Variable IRI="#i"/>
-                <Variable IRI="#n"/>
-            </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasNutritionInFood"/>
-                <Variable IRI="#f"/>
-                <Variable IRI="#n"/>
-            </ObjectPropertyAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AllNutritionsFood</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Food"/>
-                <Variable IRI="#f"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasNutritionInFood"/>
-                <Variable IRI="#f"/>
-                <NamedIndividual IRI="#Carbohydrate"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasNutritionInFood"/>
-                <Variable IRI="#f"/>
-                <NamedIndividual IRI="#Fat"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasNutritionInFood"/>
-                <Variable IRI="#f"/>
-                <NamedIndividual IRI="#Fiber"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasNutritionInFood"/>
-                <Variable IRI="#f"/>
-                <NamedIndividual IRI="#Protein"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasNutritionInFood"/>
-                <Variable IRI="#f"/>
-                <NamedIndividual IRI="#Vitamin"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasNutritionInFood"/>
-                <Variable IRI="#f"/>
-                <NamedIndividual IRI="#Water"/>
-            </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <ClassAtom>
-                <Class IRI="#AllNutritionsFood"/>
-                <Variable IRI="#f"/>
-            </ClassAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
             <Literal>HighCalFood</Literal>
         </Annotation>
         <Body>
@@ -1714,7 +1868,58 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>hasMenuNutrition</Literal>
+            <Literal>AllNutritionMenu</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Menu"/>
+                <Variable IRI="#m"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInMenu"/>
+                <Variable IRI="#m"/>
+                <NamedIndividual IRI="#Carbohydrate"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInMenu"/>
+                <Variable IRI="#m"/>
+                <NamedIndividual IRI="#Fat"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInMenu"/>
+                <Variable IRI="#m"/>
+                <NamedIndividual IRI="#Fiber"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInMenu"/>
+                <Variable IRI="#m"/>
+                <NamedIndividual IRI="#Protein"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInMenu"/>
+                <Variable IRI="#m"/>
+                <NamedIndividual IRI="#Vitamin"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#AllNutritionsMenu"/>
+                <Variable IRI="#m"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>hasNutritionInMenu</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
