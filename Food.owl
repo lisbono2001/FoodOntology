@@ -14,6 +14,9 @@
     <Prefix name="food" IRI="http://www.semanticweb.org/puvanagroup/food#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
+        <Class IRI="#AllNutritionsFood"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Beverage"/>
     </Declaration>
     <Declaration>
@@ -110,9 +113,6 @@
         <Class IRI="#UnPreparedFood"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#VeganFood"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Vegetable"/>
     </Declaration>
     <Declaration>
@@ -140,9 +140,6 @@
         <DataProperty IRI="#hasCal"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasOnlyVeggie"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasPrepared"/>
     </Declaration>
     <Declaration>
@@ -150,12 +147,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasQuickPrepareTime"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasTotalCal"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasTotalPrice"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Age"/>
@@ -392,13 +383,10 @@
             <NamedIndividual IRI="#Water"/>
         </ObjectOneOf>
     </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#VeganFood"/>
-        <ObjectExactCardinality cardinality="0">
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Meat"/>
-        </ObjectExactCardinality>
-    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AllNutritionsFood"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Beverage"/>
         <Class IRI="#Edible"/>
@@ -496,29 +484,8 @@
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Menu"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasTotalCal"/>
-            <Datatype abbreviatedIRI="xsd:float"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Menu"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasTotalPrice"/>
-            <Datatype abbreviatedIRI="xsd:float"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#NonVeganFood"/>
         <Class IRI="#Food"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonVeganFood"/>
-        <DataHasValue>
-            <DataProperty IRI="#hasOnlyVeggie"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
-        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NormalFood"/>
@@ -585,10 +552,6 @@
         </DataHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#VeganFood"/>
-        <Class IRI="#Food"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Vegetable"/>
         <Class IRI="#Ingredient"/>
     </SubClassOf>
@@ -599,10 +562,6 @@
             <NamedIndividual IRI="#Fiber"/>
         </ObjectHasValue>
     </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#NonVeganFood"/>
-        <Class IRI="#VeganFood"/>
-    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#FoodProcess"/>
         <NamedIndividual IRI="#Age"/>
@@ -1162,11 +1121,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">120.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasOnlyVeggie"/>
-        <NamedIndividual IRI="#FriedSoyTofu"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hasPrepared"/>
         <NamedIndividual IRI="#FriedSoyTofu"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
@@ -1180,11 +1134,6 @@
         <DataProperty IRI="#hasCal"/>
         <NamedIndividual IRI="#Fries"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">220.0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasOnlyVeggie"/>
-        <NamedIndividual IRI="#Fries"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasPrice"/>
@@ -1312,10 +1261,6 @@
         <Class IRI="#Edible"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasOnlyVeggie"/>
-        <Class IRI="#Food"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#hasPrepared"/>
         <Class IRI="#Food"/>
     </DataPropertyDomain>
@@ -1327,21 +1272,9 @@
         <DataProperty IRI="#hasQuickPrepareTime"/>
         <Class IRI="#Food"/>
     </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasTotalCal"/>
-        <Class IRI="#Menu"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasTotalPrice"/>
-        <Class IRI="#Menu"/>
-    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#hasCal"/>
         <Datatype abbreviatedIRI="xsd:float"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasOnlyVeggie"/>
-        <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasPrepared"/>
@@ -1354,14 +1287,6 @@
     <DataPropertyRange>
         <DataProperty IRI="#hasQuickPrepareTime"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasTotalCal"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasTotalPrice"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DLSafeRule>
         <Annotation>
@@ -1412,7 +1337,12 @@
                 <NamedIndividual IRI="#Water"/>
             </ObjectPropertyAtom>
         </Body>
-        <Head/>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#AllNutritionsFood"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+        </Head>
     </DLSafeRule>
     <DLSafeRule>
         <Annotation>
@@ -1623,37 +1553,6 @@
         <Head>
             <ClassAtom>
                 <Class IRI="#LowCalFood"/>
-                <Variable IRI="#f"/>
-            </ClassAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>VeganFood</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Food"/>
-                <Variable IRI="#f"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#hasOnlyVeggie"/>
-                <Variable IRI="#f"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-            </DataPropertyAtom>
-        </Body>
-        <Head>
-            <ClassAtom>
-                <Class IRI="#VeganFood"/>
                 <Variable IRI="#f"/>
             </ClassAtom>
         </Head>
