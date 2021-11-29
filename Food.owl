@@ -350,23 +350,6 @@
         <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="#Food"/>
-        <ObjectIntersectionOf>
-            <ObjectMinCardinality cardinality="1">
-                <ObjectProperty IRI="#hasFoodProcess"/>
-                <Class IRI="#FoodProcess"/>
-            </ObjectMinCardinality>
-            <ObjectMinCardinality cardinality="1">
-                <ObjectProperty IRI="#hasIngredient"/>
-                <Class IRI="#Ingredient"/>
-            </ObjectMinCardinality>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasPrepared"/>
-                <Datatype abbreviatedIRI="xsd:boolean"/>
-            </DataExactCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="#Nutrition"/>
         <ObjectOneOf>
             <NamedIndividual IRI="#Carbohydrate"/>
@@ -422,6 +405,48 @@
     <SubClassOf>
         <Class IRI="#Food"/>
         <Class IRI="#Edible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFoodProcess"/>
+            <Class IRI="#FoodProcess"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasFoodProcess"/>
+            <Class IRI="#FoodProcess"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasPrepared"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasPrepared"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FriedChicken"/>
