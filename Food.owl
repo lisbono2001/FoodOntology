@@ -356,23 +356,6 @@
         <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="#Food"/>
-        <ObjectIntersectionOf>
-            <ObjectMinCardinality cardinality="1">
-                <ObjectProperty IRI="#hasFoodProcess"/>
-                <Class IRI="#FoodProcess"/>
-            </ObjectMinCardinality>
-            <ObjectMinCardinality cardinality="1">
-                <ObjectProperty IRI="#hasIngredient"/>
-                <Class IRI="#Ingredient"/>
-            </ObjectMinCardinality>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="#hasPrepared"/>
-                <Datatype abbreviatedIRI="xsd:boolean"/>
-            </DataExactCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="#Nutrition"/>
         <ObjectOneOf>
             <NamedIndividual IRI="#Carbohydrate"/>
@@ -425,6 +408,48 @@
     <SubClassOf>
         <Class IRI="#Food"/>
         <Class IRI="#Edible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFoodProcess"/>
+            <Class IRI="#FoodProcess"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasFoodProcess"/>
+            <Class IRI="#FoodProcess"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasIngredient"/>
+            <Class IRI="#Ingredient"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasPrepared"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <DataAllValuesFrom>
+            <DataProperty IRI="#hasPrepared"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FriedChicken"/>
@@ -1299,62 +1324,6 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>AllNutritionsFood</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Food"/>
-                <Variable IRI="#f"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasNutritionInFood"/>
-                <Variable IRI="#f"/>
-                <NamedIndividual IRI="#Carbohydrate"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasNutritionInFood"/>
-                <Variable IRI="#f"/>
-                <NamedIndividual IRI="#Fat"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasNutritionInFood"/>
-                <Variable IRI="#f"/>
-                <NamedIndividual IRI="#Fiber"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasNutritionInFood"/>
-                <Variable IRI="#f"/>
-                <NamedIndividual IRI="#Protein"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasNutritionInFood"/>
-                <Variable IRI="#f"/>
-                <NamedIndividual IRI="#Vitamin"/>
-            </ObjectPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasNutritionInFood"/>
-                <Variable IRI="#f"/>
-                <NamedIndividual IRI="#Water"/>
-            </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <ClassAtom>
-                <Class IRI="#AllNutritionsFood"/>
-                <Variable IRI="#f"/>
-            </ClassAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal></Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
             <Literal>FriedChicken</Literal>
         </Annotation>
         <Body>
@@ -1485,6 +1454,62 @@
                 <Variable IRI="#f"/>
                 <Variable IRI="#n"/>
             </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AllNutritionsFood</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Food"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInFood"/>
+                <Variable IRI="#f"/>
+                <NamedIndividual IRI="#Carbohydrate"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInFood"/>
+                <Variable IRI="#f"/>
+                <NamedIndividual IRI="#Fat"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInFood"/>
+                <Variable IRI="#f"/>
+                <NamedIndividual IRI="#Fiber"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInFood"/>
+                <Variable IRI="#f"/>
+                <NamedIndividual IRI="#Protein"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInFood"/>
+                <Variable IRI="#f"/>
+                <NamedIndividual IRI="#Vitamin"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasNutritionInFood"/>
+                <Variable IRI="#f"/>
+                <NamedIndividual IRI="#Water"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#AllNutritionsFood"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
         </Head>
     </DLSafeRule>
     <DLSafeRule>
