@@ -20,12 +20,6 @@
         <Class IRI="#Beverage"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Bread"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Burgur"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#CannedFood"/>
     </Declaration>
     <Declaration>
@@ -99,9 +93,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Salad"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sandwich"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sauce"/>
@@ -400,14 +391,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Bread"/>
-        <Class IRI="#Ingredient"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Burgur"/>
-        <Class IRI="#Fastfood"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#CannedFood"/>
         <Class IRI="#PreparedFood"/>
     </SubClassOf>
@@ -614,10 +597,6 @@
         <Class IRI="#Fastfood"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Sandwich"/>
-        <Class IRI="#Fastfood"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Sauce"/>
         <Class IRI="#Ingredient"/>
     </SubClassOf>
@@ -789,10 +768,6 @@
     <ClassAssertion>
         <Class IRI="#Seafood"/>
         <NamedIndividual IRI="#Fish"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Bread"/>
-        <NamedIndividual IRI="#FrenchBread"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Food"/>
@@ -977,14 +952,6 @@
     <ClassAssertion>
         <Class IRI="#Water"/>
         <NamedIndividual IRI="#Water"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Bread"/>
-        <NamedIndividual IRI="#WheatBread"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Bread"/>
-        <NamedIndividual IRI="#WhiteBread"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasFoodProcess"/>
