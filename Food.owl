@@ -23,6 +23,9 @@
         <Class IRI="#Bread"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Burgur"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CannedFood"/>
     </Declaration>
     <Declaration>
@@ -98,6 +101,9 @@
         <Class IRI="#Salad"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Sandwich"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Sauce"/>
     </Declaration>
     <Declaration>
@@ -110,7 +116,10 @@
         <Class IRI="#Vegetable"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasBeverage"/>
+        <ObjectProperty IRI="#hasBeverageInMenu"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEdibleInMenu"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasFoodInMenu"/>
@@ -394,6 +403,10 @@
         <Class IRI="#Ingredient"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Burgur"/>
+        <Class IRI="#Fastfood"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CannedFood"/>
         <Class IRI="#PreparedFood"/>
     </SubClassOf>
@@ -404,13 +417,6 @@
     <SubClassOf>
         <Class IRI="#Fastfood"/>
         <Class IRI="#UnPreparedFood"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Fastfood"/>
-        <DataHasValue>
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Flour"/>
@@ -535,15 +541,8 @@
         <Class IRI="#UnPreparedFood"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#NormalFood"/>
-        <DataHasValue>
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </DataHasValue>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Oil"/>
-        <Class IRI="#Meat"/>
+        <Class IRI="#Ingredient"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Oil"/>
@@ -569,6 +568,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Salad"/>
+        <Class IRI="#Fastfood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sandwich"/>
         <Class IRI="#Fastfood"/>
     </SubClassOf>
     <SubClassOf>
@@ -902,22 +905,22 @@
         <NamedIndividual IRI="#Salt"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasFoodInMenu"/>
+        <ObjectProperty IRI="#hasEdibleInMenu"/>
         <NamedIndividual IRI="#BeefSteakFries"/>
         <NamedIndividual IRI="#BeefSteak"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasFoodInMenu"/>
+        <ObjectProperty IRI="#hasEdibleInMenu"/>
         <NamedIndividual IRI="#BeefSteakFries"/>
         <NamedIndividual IRI="#Fries"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasFoodInMenu"/>
+        <ObjectProperty IRI="#hasEdibleInMenu"/>
         <NamedIndividual IRI="#BeefSteakMashpotato"/>
         <NamedIndividual IRI="#BeefSteak"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasFoodInMenu"/>
+        <ObjectProperty IRI="#hasEdibleInMenu"/>
         <NamedIndividual IRI="#BeefSteakMashpotato"/>
         <NamedIndividual IRI="#MashPotato"/>
     </ObjectPropertyAssertion>
@@ -1012,22 +1015,27 @@
         <NamedIndividual IRI="#VegetableOil"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasFoodInMenu"/>
+        <ObjectProperty IRI="#hasEdibleInMenu"/>
         <NamedIndividual IRI="#KaiJuJai"/>
         <NamedIndividual IRI="#ChickenNugget"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasFoodInMenu"/>
+        <ObjectProperty IRI="#hasEdibleInMenu"/>
+        <NamedIndividual IRI="#KaiJuJai"/>
+        <NamedIndividual IRI="#Cola"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEdibleInMenu"/>
         <NamedIndividual IRI="#KaiJuJai"/>
         <NamedIndividual IRI="#FriedChicken"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasFoodInMenu"/>
+        <ObjectProperty IRI="#hasEdibleInMenu"/>
         <NamedIndividual IRI="#KaiJuJai"/>
         <NamedIndividual IRI="#Fries"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasFoodInMenu"/>
+        <ObjectProperty IRI="#hasEdibleInMenu"/>
         <NamedIndividual IRI="#KaiJuJai"/>
         <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
     </ObjectPropertyAssertion>
@@ -1153,6 +1161,16 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCal"/>
+        <NamedIndividual IRI="#Cola"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">160.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Cola"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">70.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCal"/>
         <NamedIndividual IRI="#FriedChicken"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">200.0</Literal>
     </DataPropertyAssertion>
@@ -1185,11 +1203,6 @@
         <DataProperty IRI="#hasPrice"/>
         <NamedIndividual IRI="#Fries"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">180.0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasQuickPrepareTime"/>
-        <NamedIndividual IRI="#Fries"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCal"/>
@@ -1252,7 +1265,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">150.0</Literal>
     </DataPropertyAssertion>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasBeverage"/>
+        <ObjectProperty IRI="#hasBeverageInMenu"/>
+        <Class IRI="#Menu"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEdibleInMenu"/>
         <Class IRI="#Menu"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -1308,8 +1325,12 @@
         <Class IRI="#Nutrition"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasBeverage"/>
+        <ObjectProperty IRI="#hasBeverageInMenu"/>
         <Class IRI="#Beverage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEdibleInMenu"/>
+        <Class IRI="#Edible"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasFoodInMenu"/>
@@ -1711,29 +1732,29 @@
         <Body>
             <ClassAtom>
                 <Class IRI="#Menu"/>
-                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#m"/>
+                <Variable IRI="#m"/>
             </ClassAtom>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="#hasFoodInMenu"/>
-                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#m"/>
-                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#f"/>
+                <ObjectProperty IRI="#hasEdibleInMenu"/>
+                <Variable IRI="#m"/>
+                <Variable IRI="#f"/>
             </ObjectPropertyAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasIngredient"/>
-                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#f"/>
-                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#i"/>
+                <Variable IRI="#f"/>
+                <Variable IRI="#i"/>
             </ObjectPropertyAtom>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasNutrition"/>
-                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#i"/>
-                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#n"/>
+                <Variable IRI="#i"/>
+                <Variable IRI="#n"/>
             </ObjectPropertyAtom>
         </Body>
         <Head>
             <ObjectPropertyAtom>
                 <ObjectProperty IRI="#hasNutritionInMenu"/>
-                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#m"/>
-                <Variable IRI="http://www.semanticweb.org/puvanagroup/fastfood#n"/>
+                <Variable IRI="#m"/>
+                <Variable IRI="#n"/>
             </ObjectPropertyAtom>
         </Head>
     </DLSafeRule>
