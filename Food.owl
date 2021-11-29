@@ -23,9 +23,6 @@
         <Class IRI="#Bread"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Burgur"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#CannedFood"/>
     </Declaration>
     <Declaration>
@@ -99,9 +96,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Salad"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sandwich"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sauce"/>
@@ -379,10 +373,6 @@
         <Class IRI="#Ingredient"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Burgur"/>
-        <Class IRI="#Fastfood"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#CannedFood"/>
         <Class IRI="#PreparedFood"/>
     </SubClassOf>
@@ -393,6 +383,13 @@
     <SubClassOf>
         <Class IRI="#Fastfood"/>
         <Class IRI="#UnPreparedFood"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fastfood"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasQuickPrepareTime"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Flour"/>
@@ -517,8 +514,15 @@
         <Class IRI="#UnPreparedFood"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#NormalFood"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasQuickPrepareTime"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Oil"/>
-        <Class IRI="#Ingredient"/>
+        <Class IRI="#Meat"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Oil"/>
@@ -544,10 +548,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Salad"/>
-        <Class IRI="#Fastfood"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sandwich"/>
         <Class IRI="#Fastfood"/>
     </SubClassOf>
     <SubClassOf>
@@ -1166,6 +1166,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">180.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasQuickPrepareTime"/>
+        <NamedIndividual IRI="#Fries"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#hasCal"/>
         <NamedIndividual IRI="#MashPotato"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">250.0</Literal>
@@ -1313,6 +1318,37 @@
         <DataProperty IRI="#hasQuickPrepareTime"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Fastfood</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Food"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasQuickPrepareTime"/>
+                <Variable IRI="#f"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Fastfood"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
     <DLSafeRule>
         <Annotation>
             <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
