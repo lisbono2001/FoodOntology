@@ -1241,6 +1241,11 @@
         <NamedIndividual IRI="#GarlicFriedRice"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEdibleInMenu"/>
+        <NamedIndividual IRI="#PorkSteakWithGarlicRice"/>
+        <NamedIndividual IRI="#PorkSteak"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasFoodProcess"/>
         <NamedIndividual IRI="#SamMaeKruo"/>
         <NamedIndividual IRI="#Boil"/>
