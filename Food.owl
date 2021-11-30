@@ -377,22 +377,11 @@
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#AllNutritionsMenu"/>
-        <Class IRI="#ChildMenu"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#AllNutritionsMenu"/>
         <Class IRI="#Menu"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Beverage"/>
         <Class IRI="#Edible"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Beverage"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Beverage"/>
@@ -402,62 +391,8 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Beverage"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CannedFood"/>
-        <Class IRI="#Edible"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CannedFood"/>
-        <Class IRI="#Food"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#CannedFood"/>
         <Class IRI="#PreparedFood"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CannedFood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CannedFood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CannedFood"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CannedFood"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#CannedFood"/>
-        <DataHasValue>
-            <DataProperty IRI="#hasPrepared"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </DataHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ChildMenu"/>
-        <Class IRI="#AllNutritionsMenu"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ChildMenu"/>
@@ -479,57 +414,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Fastfood"/>
-        <Class IRI="#Edible"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Fastfood"/>
-        <Class IRI="#Food"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Fastfood"/>
         <Class IRI="#UnPreparedFood"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Fastfood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Fastfood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Fastfood"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Fastfood"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Fastfood"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Fastfood"/>
-        <DataHasValue>
-            <DataProperty IRI="#hasPrepared"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
-        </DataHasValue>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Fastfood"/>
@@ -539,29 +424,8 @@
         </DataHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Fastfood"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Flour"/>
         <Class IRI="#Ingredient"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Flour"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Flour"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Flour"/>
@@ -583,23 +447,9 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Food"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Food"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#hasFoodProcess"/>
             <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Food"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -621,145 +471,16 @@
         <Class IRI="#Fastfood"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#FriedChicken"/>
-        <Class IRI="#Food"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FriedChicken"/>
-        <Class IRI="#UnPreparedFood"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FriedChicken"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FriedChicken"/>
-        <DataHasValue>
-            <DataProperty IRI="#hasPrepared"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
-        </DataHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FriedChicken"/>
-        <DataHasValue>
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </DataHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FriedChicken"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#FriedPotato"/>
         <Class IRI="#Fastfood"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FriedPotato"/>
-        <Class IRI="#Food"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FriedPotato"/>
-        <Class IRI="#UnPreparedFood"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FriedPotato"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FriedPotato"/>
-        <DataHasValue>
-            <DataProperty IRI="#hasPrepared"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
-        </DataHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FriedPotato"/>
-        <DataHasValue>
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </DataHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FriedPotato"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FrozenFood"/>
-        <Class IRI="#Edible"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FrozenFood"/>
-        <Class IRI="#Food"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FrozenFood"/>
         <Class IRI="#PreparedFood"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#FrozenFood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FrozenFood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FrozenFood"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FrozenFood"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#FrozenFood"/>
-        <DataHasValue>
-            <DataProperty IRI="#hasPrepared"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </DataHasValue>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Garnish"/>
         <Class IRI="#Ingredient"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Garnish"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Garnish"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Garnish"/>
@@ -770,55 +491,9 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HighCalFood"/>
-        <Class IRI="#Edible"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#HighCalFood"/>
         <Class IRI="#Food"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#HighCalFood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#HighCalFood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#HighCalFood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#HighCalFood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#HighCalFood"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#HighCalFood"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Ingredient"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasNutrition"/>
@@ -831,74 +506,14 @@
             <ObjectProperty IRI="#hasNutrition"/>
             <Class IRI="#Nutrition"/>
         </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LowCalFood"/>
-        <Class IRI="#Edible"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LowCalFood"/>
         <Class IRI="#Food"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#LowCalFood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LowCalFood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LowCalFood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LowCalFood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LowCalFood"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#LowCalFood"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Meat"/>
         <Class IRI="#Ingredient"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Meat"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Meat"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Meat"/>
@@ -923,160 +538,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NonHalalFood"/>
-        <Class IRI="#Edible"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonHalalFood"/>
         <Class IRI="#Food"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonHalalFood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonHalalFood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonHalalFood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonHalalFood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonHalalFood"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonHalalFood"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonKetoFood"/>
-        <Class IRI="#Edible"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NonKetoFood"/>
         <Class IRI="#Food"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#NonKetoFood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonKetoFood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonKetoFood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonKetoFood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonKetoFood"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonKetoFood"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#NonVeganFood"/>
-        <Class IRI="#Edible"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonVeganFood"/>
-        <Class IRI="#Food"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonVeganFood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonVeganFood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonVeganFood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonVeganFood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonVeganFood"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NonVeganFood"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NormalFood"/>
-        <Class IRI="#Edible"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NormalFood"/>
         <Class IRI="#Food"/>
     </SubClassOf>
     <SubClassOf>
@@ -1085,87 +554,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NormalFood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NormalFood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NormalFood"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NormalFood"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NormalFood"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NormalFood"/>
-        <DataHasValue>
-            <DataProperty IRI="#hasPrepared"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
-        </DataHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NormalFood"/>
         <DataHasValue>
             <DataProperty IRI="#hasQuickPrepareTime"/>
             <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
         </DataHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#NormalFood"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Nutrition"/>
-        <ObjectOneOf>
-            <NamedIndividual IRI="#Carbohydrate"/>
-            <NamedIndividual IRI="#Fat"/>
-            <NamedIndividual IRI="#Fiber"/>
-            <NamedIndividual IRI="#Protein"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectOneOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Oil"/>
         <Class IRI="#Ingredient"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Oil"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Oil"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Oil"/>
@@ -1176,53 +572,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PreparedFood"/>
-        <Class IRI="#Edible"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PreparedFood"/>
         <Class IRI="#Food"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PreparedFood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PreparedFood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PreparedFood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PreparedFood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PreparedFood"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PreparedFood"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PreparedFood"/>
@@ -1234,20 +584,6 @@
     <SubClassOf>
         <Class IRI="#Rice"/>
         <Class IRI="#Ingredient"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Rice"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Rice"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Rice"/>
@@ -1261,58 +597,8 @@
         <Class IRI="#Fastfood"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Salad"/>
-        <Class IRI="#Food"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Salad"/>
-        <Class IRI="#UnPreparedFood"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Salad"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Salad"/>
-        <DataHasValue>
-            <DataProperty IRI="#hasPrepared"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
-        </DataHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Salad"/>
-        <DataHasValue>
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </DataHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Salad"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Sauce"/>
         <Class IRI="#Ingredient"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sauce"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sauce"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sauce"/>
@@ -1327,20 +613,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Seafood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Seafood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Seafood"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#hasNutrition"/>
             <NamedIndividual IRI="#Protein"/>
@@ -1348,53 +620,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UnPreparedFood"/>
-        <Class IRI="#Edible"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#UnPreparedFood"/>
         <Class IRI="#Food"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#UnPreparedFood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#UnPreparedFood"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#UnPreparedFood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#UnPreparedFood"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#UnPreparedFood"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#UnPreparedFood"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UnPreparedFood"/>
@@ -1423,20 +649,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Vegetable"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Vegetable"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Vegetable"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#hasNutrition"/>
             <NamedIndividual IRI="#Fiber"/>
@@ -1448,34 +660,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Water"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Water"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Water"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#hasNutrition"/>
             <NamedIndividual IRI="#Vitamin"/>
         </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <ObjectOneOf>
-            <NamedIndividual IRI="#Carbohydrate"/>
-            <NamedIndividual IRI="#Fat"/>
-            <NamedIndividual IRI="#Fiber"/>
-            <NamedIndividual IRI="#Protein"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectOneOf>
-        <Class IRI="#Nutrition"/>
     </SubClassOf>
     <ClassAssertion>
         <Class IRI="#FoodProcess"/>
@@ -1483,31 +671,6 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Flour"/>
-        <NamedIndividual IRI="#AllPurposeFlour"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#AllPurposeFlour"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#AllPurposeFlour"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#AllPurposeFlour"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Carbohydrate"/>
-        </ObjectHasValue>
         <NamedIndividual IRI="#AllPurposeFlour"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1519,199 +682,27 @@
         <NamedIndividual IRI="#Bake"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Basil"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Vegetable"/>
         <NamedIndividual IRI="#Basil"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Basil"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Basil"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Fiber"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#Basil"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Beef"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Meat"/>
         <NamedIndividual IRI="#Beef"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Beef"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Beef"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Protein"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#Beef"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Edible"/>
-        <NamedIndividual IRI="#BeefSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Food"/>
         <NamedIndividual IRI="#BeefSteak"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#HighCalFood"/>
-        <NamedIndividual IRI="#BeefSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NonVeganFood"/>
-        <NamedIndividual IRI="#BeefSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#BeefSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#BeefSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#BeefSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#BeefSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-        <NamedIndividual IRI="#BeefSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-        <NamedIndividual IRI="#BeefSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataHasValue>
-            <DataProperty IRI="#hasPrepared"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
-        </DataHasValue>
-        <NamedIndividual IRI="#BeefSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#AllNutritionsMenu"/>
-        <NamedIndividual IRI="#BeefSteakFries"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ChildMenu"/>
-        <NamedIndividual IRI="#BeefSteakFries"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Menu"/>
         <NamedIndividual IRI="#BeefSteakFries"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasEdibleInMenu"/>
-            <Class IRI="#Edible"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#BeefSteakFries"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasEdibleInMenu"/>
-            <Class IRI="#Edible"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#BeefSteakFries"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Menu"/>
-        <NamedIndividual IRI="#BeefSteakMashpotato"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasEdibleInMenu"/>
-            <Class IRI="#Edible"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#BeefSteakMashpotato"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasEdibleInMenu"/>
-            <Class IRI="#Edible"/>
-        </ObjectAllValuesFrom>
         <NamedIndividual IRI="#BeefSteakMashpotato"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Garnish"/>
-        <NamedIndividual IRI="#BlackPepper"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#BlackPepper"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#BlackPepper"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#BlackPepper"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectHasValue>
         <NamedIndividual IRI="#BlackPepper"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1719,126 +710,15 @@
         <NamedIndividual IRI="#Boil"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#BrownRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Rice"/>
         <NamedIndividual IRI="#BrownRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#BrownRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#BrownRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Carbohydrate"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#BrownRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Butterhead"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Vegetable"/>
         <NamedIndividual IRI="#Butterhead"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Butterhead"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Butterhead"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Fiber"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#Butterhead"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Edible"/>
-        <NamedIndividual IRI="#CaesarSalad"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Food"/>
-        <NamedIndividual IRI="#CaesarSalad"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LowCalFood"/>
-        <NamedIndividual IRI="#CaesarSalad"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NonVeganFood"/>
-        <NamedIndividual IRI="#CaesarSalad"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#CaesarSalad"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#CaesarSalad"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#CaesarSalad"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#CaesarSalad"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-        <NamedIndividual IRI="#CaesarSalad"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-        <NamedIndividual IRI="#CaesarSalad"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataHasValue>
-            <DataProperty IRI="#hasPrepared"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </DataHasValue>
         <NamedIndividual IRI="#CaesarSalad"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1846,260 +726,23 @@
         <NamedIndividual IRI="#Carbohydrate"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectOneOf>
-            <NamedIndividual IRI="#Carbohydrate"/>
-            <NamedIndividual IRI="#Fat"/>
-            <NamedIndividual IRI="#Fiber"/>
-            <NamedIndividual IRI="#Protein"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectOneOf>
-        <NamedIndividual IRI="#Carbohydrate"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Carrot"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Vegetable"/>
         <NamedIndividual IRI="#Carrot"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Carrot"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Carrot"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Fiber"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#Carrot"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Edible"/>
-        <NamedIndividual IRI="#ChickenBreast"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Food"/>
         <NamedIndividual IRI="#ChickenBreast"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LowCalFood"/>
-        <NamedIndividual IRI="#ChickenBreast"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NonVeganFood"/>
-        <NamedIndividual IRI="#ChickenBreast"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#ChickenBreast"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#ChickenBreast"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#ChickenBreast"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#ChickenBreast"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-        <NamedIndividual IRI="#ChickenBreast"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-        <NamedIndividual IRI="#ChickenBreast"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#ChickenMeat"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Meat"/>
         <NamedIndividual IRI="#ChickenMeat"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#ChickenMeat"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#ChickenMeat"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Protein"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#ChickenMeat"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Edible"/>
-        <NamedIndividual IRI="#ChickenNugget"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Fastfood"/>
-        <NamedIndividual IRI="#ChickenNugget"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Food"/>
         <NamedIndividual IRI="#ChickenNugget"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#FriedChicken"/>
-        <NamedIndividual IRI="#ChickenNugget"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LowCalFood"/>
-        <NamedIndividual IRI="#ChickenNugget"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NonKetoFood"/>
-        <NamedIndividual IRI="#ChickenNugget"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NonVeganFood"/>
-        <NamedIndividual IRI="#ChickenNugget"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#UnPreparedFood"/>
-        <NamedIndividual IRI="#ChickenNugget"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#ChickenNugget"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#ChickenNugget"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#ChickenNugget"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#ChickenNugget"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-        <NamedIndividual IRI="#ChickenNugget"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-        <NamedIndividual IRI="#ChickenNugget"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-        <NamedIndividual IRI="#ChickenNugget"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataHasValue>
-            <DataProperty IRI="#hasPrepared"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
-        </DataHasValue>
-        <NamedIndividual IRI="#ChickenNugget"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataHasValue>
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </DataHasValue>
-        <NamedIndividual IRI="#ChickenNugget"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataExactCardinality>
-        <NamedIndividual IRI="#ChickenNugget"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#ChiliSauce"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Sauce"/>
-        <NamedIndividual IRI="#ChiliSauce"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#ChiliSauce"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#ChiliSauce"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectHasValue>
         <NamedIndividual IRI="#ChiliSauce"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -2107,86 +750,11 @@
         <NamedIndividual IRI="#Cola"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Edible"/>
-        <NamedIndividual IRI="#Cola"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Cola"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Water"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Cola"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Cola"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#CowMilk"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Meat"/>
         <NamedIndividual IRI="#CowMilk"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#CowMilk"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#CowMilk"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Protein"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#CowMilk"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Egg"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Meat"/>
-        <NamedIndividual IRI="#Egg"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Egg"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Egg"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Protein"/>
-        </ObjectHasValue>
         <NamedIndividual IRI="#Egg"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -2194,65 +762,12 @@
         <NamedIndividual IRI="#Fat"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectOneOf>
-            <NamedIndividual IRI="#Carbohydrate"/>
-            <NamedIndividual IRI="#Fat"/>
-            <NamedIndividual IRI="#Fiber"/>
-            <NamedIndividual IRI="#Protein"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectOneOf>
-        <NamedIndividual IRI="#Fat"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Nutrition"/>
         <NamedIndividual IRI="#Fiber"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectOneOf>
-            <NamedIndividual IRI="#Carbohydrate"/>
-            <NamedIndividual IRI="#Fat"/>
-            <NamedIndividual IRI="#Fiber"/>
-            <NamedIndividual IRI="#Protein"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectOneOf>
-        <NamedIndividual IRI="#Fiber"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Fish"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Seafood"/>
         <NamedIndividual IRI="#Fish"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Fish"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Fish"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Protein"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#Fish"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Edible"/>
-        <NamedIndividual IRI="#FriedChicken"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Fastfood"/>
-        <NamedIndividual IRI="#FriedChicken"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Food"/>
@@ -2263,208 +778,11 @@
         <NamedIndividual IRI="#FriedChicken"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#LowCalFood"/>
-        <NamedIndividual IRI="#FriedChicken"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NonKetoFood"/>
-        <NamedIndividual IRI="#FriedChicken"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NonVeganFood"/>
-        <NamedIndividual IRI="#FriedChicken"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#UnPreparedFood"/>
-        <NamedIndividual IRI="#FriedChicken"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#FriedChicken"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#FriedChicken"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#FriedChicken"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#FriedChicken"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-        <NamedIndividual IRI="#FriedChicken"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-        <NamedIndividual IRI="#FriedChicken"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-        <NamedIndividual IRI="#FriedChicken"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataHasValue>
-            <DataProperty IRI="#hasPrepared"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
-        </DataHasValue>
-        <NamedIndividual IRI="#FriedChicken"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataHasValue>
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </DataHasValue>
-        <NamedIndividual IRI="#FriedChicken"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataExactCardinality>
-        <NamedIndividual IRI="#FriedChicken"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Edible"/>
-        <NamedIndividual IRI="#FriedSoyTofu"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Food"/>
         <NamedIndividual IRI="#FriedSoyTofu"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#LowCalFood"/>
-        <NamedIndividual IRI="#FriedSoyTofu"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#FriedSoyTofu"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#FriedSoyTofu"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#FriedSoyTofu"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#FriedSoyTofu"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-        <NamedIndividual IRI="#FriedSoyTofu"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-        <NamedIndividual IRI="#FriedSoyTofu"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataHasValue>
-            <DataProperty IRI="#hasPrepared"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
-        </DataHasValue>
-        <NamedIndividual IRI="#FriedSoyTofu"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Edible"/>
-        <NamedIndividual IRI="#Fries"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Food"/>
-        <NamedIndividual IRI="#Fries"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#HighCalFood"/>
-        <NamedIndividual IRI="#Fries"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NonKetoFood"/>
-        <NamedIndividual IRI="#Fries"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Fries"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Fries"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Fries"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Fries"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-        <NamedIndividual IRI="#Fries"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
         <NamedIndividual IRI="#Fries"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -2472,104 +790,11 @@
         <NamedIndividual IRI="#Fry"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Garlic"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Vegetable"/>
         <NamedIndividual IRI="#Garlic"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Garlic"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Garlic"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Fiber"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#Garlic"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Edible"/>
-        <NamedIndividual IRI="#GarlicFriedRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Food"/>
-        <NamedIndividual IRI="#GarlicFriedRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LowCalFood"/>
-        <NamedIndividual IRI="#GarlicFriedRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NonKetoFood"/>
-        <NamedIndividual IRI="#GarlicFriedRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#GarlicFriedRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#GarlicFriedRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#GarlicFriedRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#GarlicFriedRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-        <NamedIndividual IRI="#GarlicFriedRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-        <NamedIndividual IRI="#GarlicFriedRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataHasValue>
-            <DataProperty IRI="#hasPrepared"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
-        </DataHasValue>
-        <NamedIndividual IRI="#GarlicFriedRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataHasValue>
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
-        </DataHasValue>
         <NamedIndividual IRI="#GarlicFriedRice"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -2577,66 +802,12 @@
         <NamedIndividual IRI="#Grill"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Iceberg"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Vegetable"/>
         <NamedIndividual IRI="#Iceberg"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Iceberg"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Iceberg"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Fiber"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#Iceberg"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#JasmineRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Rice"/>
         <NamedIndividual IRI="#JasmineRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#JasmineRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#JasmineRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Carbohydrate"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#JasmineRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#AllNutritionsMenu"/>
-        <NamedIndividual IRI="#KaiJuJai"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ChildMenu"/>
@@ -2647,451 +818,51 @@
         <NamedIndividual IRI="#KaiJuJai"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasEdibleInMenu"/>
-            <Class IRI="#Edible"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#KaiJuJai"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasEdibleInMenu"/>
-            <Class IRI="#Edible"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#KaiJuJai"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Menu"/>
         <NamedIndividual IRI="#KaiMaiJuJai"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasEdibleInMenu"/>
-            <Class IRI="#Edible"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#KaiMaiJuJai"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasEdibleInMenu"/>
-            <Class IRI="#Edible"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#KaiMaiJuJai"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Edible"/>
-        <NamedIndividual IRI="#MashPotato"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Food"/>
         <NamedIndividual IRI="#MashPotato"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#HighCalFood"/>
-        <NamedIndividual IRI="#MashPotato"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NonVeganFood"/>
-        <NamedIndividual IRI="#MashPotato"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#MashPotato"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#MashPotato"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#MashPotato"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#MashPotato"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-        <NamedIndividual IRI="#MashPotato"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-        <NamedIndividual IRI="#MashPotato"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataHasValue>
-            <DataProperty IRI="#hasPrepared"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
-        </DataHasValue>
-        <NamedIndividual IRI="#MashPotato"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Mayonnaise"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Sauce"/>
-        <NamedIndividual IRI="#Mayonnaise"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Mayonnaise"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Mayonnaise"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectHasValue>
         <NamedIndividual IRI="#Mayonnaise"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Menu"/>
         <NamedIndividual IRI="#MegaLean"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasEdibleInMenu"/>
-            <Class IRI="#Edible"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#MegaLean"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasEdibleInMenu"/>
-            <Class IRI="#Edible"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#MegaLean"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#MineralWater"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Water"/>
         <NamedIndividual IRI="#MineralWater"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#MineralWater"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#MineralWater"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#MineralWater"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Mushroom"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Vegetable"/>
         <NamedIndividual IRI="#Mushroom"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Mushroom"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Mushroom"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Fiber"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#Mushroom"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Edible"/>
-        <NamedIndividual IRI="#MushroomSoup"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Food"/>
         <NamedIndividual IRI="#MushroomSoup"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#LowCalFood"/>
-        <NamedIndividual IRI="#MushroomSoup"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NonVeganFood"/>
-        <NamedIndividual IRI="#MushroomSoup"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#MushroomSoup"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#MushroomSoup"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#MushroomSoup"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#MushroomSoup"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-        <NamedIndividual IRI="#MushroomSoup"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-        <NamedIndividual IRI="#MushroomSoup"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataHasValue>
-            <DataProperty IRI="#hasPrepared"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
-        </DataHasValue>
-        <NamedIndividual IRI="#MushroomSoup"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#OliveOil"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Oil"/>
         <NamedIndividual IRI="#OliveOil"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#OliveOil"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#OliveOil"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Fat"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#OliveOil"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#OysterSauce"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Sauce"/>
         <NamedIndividual IRI="#OysterSauce"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#OysterSauce"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#OysterSauce"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#OysterSauce"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Pork"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Meat"/>
         <NamedIndividual IRI="#Pork"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Pork"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Pork"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Protein"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#Pork"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#PorkOil"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Oil"/>
         <NamedIndividual IRI="#PorkOil"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#PorkOil"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#PorkOil"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Fat"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#PorkOil"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Edible"/>
-        <NamedIndividual IRI="#PorkSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Food"/>
-        <NamedIndividual IRI="#PorkSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#HighCalFood"/>
-        <NamedIndividual IRI="#PorkSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NonVeganFood"/>
-        <NamedIndividual IRI="#PorkSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#PorkSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#PorkSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#PorkSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#PorkSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-        <NamedIndividual IRI="#PorkSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-        <NamedIndividual IRI="#PorkSteak"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataHasValue>
-            <DataProperty IRI="#hasPrepared"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
-        </DataHasValue>
         <NamedIndividual IRI="#PorkSteak"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -3099,46 +870,7 @@
         <NamedIndividual IRI="#PorkSteakWithGarlicRice"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasEdibleInMenu"/>
-            <Class IRI="#Edible"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#PorkSteakWithGarlicRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasEdibleInMenu"/>
-            <Class IRI="#Edible"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#PorkSteakWithGarlicRice"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Potato"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Vegetable"/>
-        <NamedIndividual IRI="#Potato"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Potato"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Potato"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Fiber"/>
-        </ObjectHasValue>
         <NamedIndividual IRI="#Potato"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -3146,158 +878,23 @@
         <NamedIndividual IRI="#Protein"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectOneOf>
-            <NamedIndividual IRI="#Carbohydrate"/>
-            <NamedIndividual IRI="#Fat"/>
-            <NamedIndividual IRI="#Fiber"/>
-            <NamedIndividual IRI="#Protein"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectOneOf>
-        <NamedIndividual IRI="#Protein"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Radicchio"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Vegetable"/>
         <NamedIndividual IRI="#Radicchio"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Radicchio"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Radicchio"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Fiber"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#Radicchio"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#RedCoral"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Vegetable"/>
         <NamedIndividual IRI="#RedCoral"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#RedCoral"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#RedCoral"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Fiber"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#RedCoral"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Rocket"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Vegetable"/>
         <NamedIndividual IRI="#Rocket"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Rocket"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Rocket"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Fiber"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#Rocket"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Romaine"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Vegetable"/>
         <NamedIndividual IRI="#Romaine"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Romaine"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Romaine"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Fiber"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#Romaine"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#RoseMarry"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Vegetable"/>
-        <NamedIndividual IRI="#RoseMarry"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#RoseMarry"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#RoseMarry"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Fiber"/>
-        </ObjectHasValue>
         <NamedIndividual IRI="#RoseMarry"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -3305,97 +902,7 @@
         <NamedIndividual IRI="#Salt"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Salt"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Salt"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Salt"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#Salt"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#CannedFood"/>
-        <NamedIndividual IRI="#SamMaeKruo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Edible"/>
-        <NamedIndividual IRI="#SamMaeKruo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Food"/>
-        <NamedIndividual IRI="#SamMaeKruo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#HighCalFood"/>
-        <NamedIndividual IRI="#SamMaeKruo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#PreparedFood"/>
-        <NamedIndividual IRI="#SamMaeKruo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#SamMaeKruo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#SamMaeKruo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#SamMaeKruo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#SamMaeKruo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-        <NamedIndividual IRI="#SamMaeKruo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-        <NamedIndividual IRI="#SamMaeKruo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataHasValue>
-            <DataProperty IRI="#hasPrepared"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </DataHasValue>
         <NamedIndividual IRI="#SamMaeKruo"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -3403,46 +910,7 @@
         <NamedIndividual IRI="#SamMaeKruoSetA"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasEdibleInMenu"/>
-            <Class IRI="#Edible"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#SamMaeKruoSetA"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasEdibleInMenu"/>
-            <Class IRI="#Edible"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#SamMaeKruoSetA"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Shrimp"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Seafood"/>
-        <NamedIndividual IRI="#Shrimp"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Shrimp"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Shrimp"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Protein"/>
-        </ObjectHasValue>
         <NamedIndividual IRI="#Shrimp"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -3450,217 +918,19 @@
         <NamedIndividual IRI="#Soda"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Edible"/>
-        <NamedIndividual IRI="#Soda"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Soda"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Water"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Soda"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Soda"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#SoyMilk"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Vegetable"/>
         <NamedIndividual IRI="#SoyMilk"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#SoyMilk"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#SoyMilk"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Fiber"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#SoyMilk"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#SoySauce"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Sauce"/>
         <NamedIndividual IRI="#SoySauce"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#SoySauce"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#SoySauce"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#SoySauce"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Edible"/>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Fastfood"/>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Food"/>
         <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#FriedChicken"/>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#LowCalFood"/>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NonKetoFood"/>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NonVeganFood"/>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#UnPreparedFood"/>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataHasValue>
-            <DataProperty IRI="#hasPrepared"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
-        </DataHasValue>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataHasValue>
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </DataHasValue>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#hasQuickPrepareTime"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataExactCardinality>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Squid"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Seafood"/>
-        <NamedIndividual IRI="#Squid"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Squid"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Squid"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Protein"/>
-        </ObjectHasValue>
         <NamedIndividual IRI="#Squid"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -3672,144 +942,19 @@
         <NamedIndividual IRI="#Sugar"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Sugar"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Sugar"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Sugar"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#Sugar"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Flour"/>
         <NamedIndividual IRI="#TempuraFlour"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#TempuraFlour"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#TempuraFlour"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#TempuraFlour"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Carbohydrate"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#TempuraFlour"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Tomato"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Vegetable"/>
         <NamedIndividual IRI="#Tomato"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Tomato"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Tomato"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Fiber"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#Tomato"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#TomatoSauce"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Sauce"/>
         <NamedIndividual IRI="#TomatoSauce"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#TomatoSauce"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#TomatoSauce"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#TomatoSauce"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#VegetableOil"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Oil"/>
-        <NamedIndividual IRI="#VegetableOil"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#VegetableOil"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#VegetableOil"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Fat"/>
-        </ObjectHasValue>
         <NamedIndividual IRI="#VegetableOil"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -3817,59 +962,9 @@
         <NamedIndividual IRI="#Vitamin"/>
     </ClassAssertion>
     <ClassAssertion>
-        <ObjectOneOf>
-            <NamedIndividual IRI="#Carbohydrate"/>
-            <NamedIndividual IRI="#Fat"/>
-            <NamedIndividual IRI="#Fiber"/>
-            <NamedIndividual IRI="#Protein"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectOneOf>
-        <NamedIndividual IRI="#Vitamin"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Ingredient"/>
-        <NamedIndividual IRI="#Water"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#Water"/>
         <NamedIndividual IRI="#Water"/>
     </ClassAssertion>
-    <ClassAssertion>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-        <NamedIndividual IRI="#Water"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-        <NamedIndividual IRI="#Water"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectHasValue>
-        <NamedIndividual IRI="#Water"/>
-    </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#AllPurposeFlour"/>
-        <NamedIndividual IRI="#Carbohydrate"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Basil"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Beef"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasFoodProcess"/>
         <NamedIndividual IRI="#BeefSteak"/>
@@ -3896,21 +991,6 @@
         <NamedIndividual IRI="#Salt"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#BeefSteak"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#BeefSteak"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#BeefSteak"/>
-        <NamedIndividual IRI="#Vitamin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEdibleInMenu"/>
         <NamedIndividual IRI="#BeefSteakFries"/>
         <NamedIndividual IRI="#BeefSteak"/>
@@ -3921,31 +1001,6 @@
         <NamedIndividual IRI="#Fries"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#BeefSteakFries"/>
-        <NamedIndividual IRI="#Carbohydrate"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#BeefSteakFries"/>
-        <NamedIndividual IRI="#Fat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#BeefSteakFries"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#BeefSteakFries"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#BeefSteakFries"/>
-        <NamedIndividual IRI="#Vitamin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEdibleInMenu"/>
         <NamedIndividual IRI="#BeefSteakMashpotato"/>
         <NamedIndividual IRI="#BeefSteak"/>
@@ -3954,36 +1009,6 @@
         <ObjectProperty IRI="#hasEdibleInMenu"/>
         <NamedIndividual IRI="#BeefSteakMashpotato"/>
         <NamedIndividual IRI="#MashPotato"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#BeefSteakMashpotato"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#BeefSteakMashpotato"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#BeefSteakMashpotato"/>
-        <NamedIndividual IRI="#Vitamin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#BlackPepper"/>
-        <NamedIndividual IRI="#Vitamin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#BrownRice"/>
-        <NamedIndividual IRI="#Carbohydrate"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Butterhead"/>
-        <NamedIndividual IRI="#Fiber"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasFoodProcess"/>
@@ -4006,26 +1031,6 @@
         <NamedIndividual IRI="#Romaine"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#CaesarSalad"/>
-        <NamedIndividual IRI="#Fat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#CaesarSalad"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#CaesarSalad"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Carrot"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasFoodProcess"/>
         <NamedIndividual IRI="#ChickenBreast"/>
         <NamedIndividual IRI="#Boil"/>
@@ -4034,16 +1039,6 @@
         <ObjectProperty IRI="#hasIngredient"/>
         <NamedIndividual IRI="#ChickenBreast"/>
         <NamedIndividual IRI="#ChickenMeat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#ChickenBreast"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#ChickenMeat"/>
-        <NamedIndividual IRI="#Protein"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasFoodProcess"/>
@@ -4064,26 +1059,6 @@
         <ObjectProperty IRI="#hasIngredient"/>
         <NamedIndividual IRI="#ChickenNugget"/>
         <NamedIndividual IRI="#VegetableOil"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#ChickenNugget"/>
-        <NamedIndividual IRI="#Carbohydrate"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#ChickenNugget"/>
-        <NamedIndividual IRI="#Fat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#ChickenNugget"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#ChiliSauce"/>
-        <NamedIndividual IRI="#Vitamin"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasIngredient"/>
@@ -4096,26 +1071,6 @@
         <NamedIndividual IRI="#Water"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#Cola"/>
-        <NamedIndividual IRI="#Vitamin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#CowMilk"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Egg"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Fish"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasFoodProcess"/>
         <NamedIndividual IRI="#FriedChicken"/>
         <NamedIndividual IRI="#Fry"/>
@@ -4136,21 +1091,6 @@
         <NamedIndividual IRI="#VegetableOil"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#FriedChicken"/>
-        <NamedIndividual IRI="#Carbohydrate"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#FriedChicken"/>
-        <NamedIndividual IRI="#Fat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#FriedChicken"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasFoodProcess"/>
         <NamedIndividual IRI="#FriedSoyTofu"/>
         <NamedIndividual IRI="#Fry"/>
@@ -4159,11 +1099,6 @@
         <ObjectProperty IRI="#hasIngredient"/>
         <NamedIndividual IRI="#FriedSoyTofu"/>
         <NamedIndividual IRI="#SoyMilk"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#FriedSoyTofu"/>
-        <NamedIndividual IRI="#Fiber"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasFoodProcess"/>
@@ -4186,26 +1121,6 @@
         <NamedIndividual IRI="#VegetableOil"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#Fries"/>
-        <NamedIndividual IRI="#Carbohydrate"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#Fries"/>
-        <NamedIndividual IRI="#Fat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#Fries"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Garlic"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasIngredient"/>
         <NamedIndividual IRI="#GarlicFriedRice"/>
         <NamedIndividual IRI="#Garlic"/>
@@ -4214,26 +1129,6 @@
         <ObjectProperty IRI="#hasIngredient"/>
         <NamedIndividual IRI="#GarlicFriedRice"/>
         <NamedIndividual IRI="#JasmineRice"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#GarlicFriedRice"/>
-        <NamedIndividual IRI="#Carbohydrate"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#GarlicFriedRice"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Iceberg"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#JasmineRice"/>
-        <NamedIndividual IRI="#Carbohydrate"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEdibleInMenu"/>
@@ -4261,31 +1156,6 @@
         <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#KaiJuJai"/>
-        <NamedIndividual IRI="#Carbohydrate"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#KaiJuJai"/>
-        <NamedIndividual IRI="#Fat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#KaiJuJai"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#KaiJuJai"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#KaiJuJai"/>
-        <NamedIndividual IRI="#Vitamin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEdibleInMenu"/>
         <NamedIndividual IRI="#KaiMaiJuJai"/>
         <NamedIndividual IRI="#Cola"/>
@@ -4294,26 +1164,6 @@
         <ObjectProperty IRI="#hasEdibleInMenu"/>
         <NamedIndividual IRI="#KaiMaiJuJai"/>
         <NamedIndividual IRI="#FriedChicken"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#KaiMaiJuJai"/>
-        <NamedIndividual IRI="#Carbohydrate"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#KaiMaiJuJai"/>
-        <NamedIndividual IRI="#Fat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#KaiMaiJuJai"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#KaiMaiJuJai"/>
-        <NamedIndividual IRI="#Vitamin"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasFoodProcess"/>
@@ -4331,21 +1181,6 @@
         <NamedIndividual IRI="#Potato"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#MashPotato"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#MashPotato"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Mayonnaise"/>
-        <NamedIndividual IRI="#Vitamin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEdibleInMenu"/>
         <NamedIndividual IRI="#MegaLean"/>
         <NamedIndividual IRI="#BeefSteak"/>
@@ -4361,31 +1196,6 @@
         <NamedIndividual IRI="#PorkSteak"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#MegaLean"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#MegaLean"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#MegaLean"/>
-        <NamedIndividual IRI="#Vitamin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#MineralWater"/>
-        <NamedIndividual IRI="#Vitamin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Mushroom"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasFoodProcess"/>
         <NamedIndividual IRI="#MushroomSoup"/>
         <NamedIndividual IRI="#Boil"/>
@@ -4399,36 +1209,6 @@
         <ObjectProperty IRI="#hasIngredient"/>
         <NamedIndividual IRI="#MushroomSoup"/>
         <NamedIndividual IRI="#Mushroom"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#MushroomSoup"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#MushroomSoup"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#OliveOil"/>
-        <NamedIndividual IRI="#Fat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#OysterSauce"/>
-        <NamedIndividual IRI="#Vitamin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Pork"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#PorkOil"/>
-        <NamedIndividual IRI="#Fat"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasFoodProcess"/>
@@ -4456,21 +1236,6 @@
         <NamedIndividual IRI="#Salt"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#PorkSteak"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#PorkSteak"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#PorkSteak"/>
-        <NamedIndividual IRI="#Vitamin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEdibleInMenu"/>
         <NamedIndividual IRI="#PorkSteakWithGarlicRice"/>
         <NamedIndividual IRI="#GarlicFriedRice"/>
@@ -4479,61 +1244,6 @@
         <ObjectProperty IRI="#hasEdibleInMenu"/>
         <NamedIndividual IRI="#PorkSteakWithGarlicRice"/>
         <NamedIndividual IRI="#PorkSteak"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#PorkSteakWithGarlicRice"/>
-        <NamedIndividual IRI="#Carbohydrate"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#PorkSteakWithGarlicRice"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#PorkSteakWithGarlicRice"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <NamedIndividual IRI="#PorkSteakWithGarlicRice"/>
-        <NamedIndividual IRI="#Vitamin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Potato"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Radicchio"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#RedCoral"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Rocket"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Romaine"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#RoseMarry"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Salt"/>
-        <NamedIndividual IRI="#Vitamin"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasFoodProcess"/>
@@ -4551,29 +1261,9 @@
         <NamedIndividual IRI="#SamMaeKruo"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Shrimp"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasIngredient"/>
         <NamedIndividual IRI="#Soda"/>
         <NamedIndividual IRI="#Water"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#Soda"/>
-        <NamedIndividual IRI="#Vitamin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#SoyMilk"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#SoySauce"/>
-        <NamedIndividual IRI="#Vitamin"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasFoodProcess"/>
@@ -4594,56 +1284,6 @@
         <ObjectProperty IRI="#hasIngredient"/>
         <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
         <NamedIndividual IRI="#VegetableOil"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-        <NamedIndividual IRI="#Carbohydrate"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-        <NamedIndividual IRI="#Fat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Squid"/>
-        <NamedIndividual IRI="#Protein"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Sugar"/>
-        <NamedIndividual IRI="#Vitamin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#TempuraFlour"/>
-        <NamedIndividual IRI="#Carbohydrate"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Tomato"/>
-        <NamedIndividual IRI="#Fiber"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#TomatoSauce"/>
-        <NamedIndividual IRI="#Vitamin"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#VegetableOil"/>
-        <NamedIndividual IRI="#Fat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <NamedIndividual IRI="#Water"/>
-        <NamedIndividual IRI="#Vitamin"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCal"/>
@@ -4699,11 +1339,6 @@
         <DataProperty IRI="#hasPrice"/>
         <NamedIndividual IRI="#ChickenNugget"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">150.0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasQuickPrepareTime"/>
-        <NamedIndividual IRI="#ChickenNugget"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasCal"/>
@@ -4865,11 +1500,6 @@
         <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">150.0</Literal>
     </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasQuickPrepareTime"/>
-        <NamedIndividual IRI="#SpicyFriedChickenWIng"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-    </DataPropertyAssertion>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasFoodProcess"/>
     </FunctionalObjectProperty>
@@ -4909,160 +1539,30 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasEdibleInMenu"/>
         <Class IRI="#Menu"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasEdibleInMenu"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasEdibleInMenu"/>
-            <Class IRI="#Edible"/>
-        </ObjectSomeValuesFrom>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasEdibleInMenu"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasEdibleInMenu"/>
-            <Class IRI="#Edible"/>
-        </ObjectAllValuesFrom>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasFoodProcess"/>
-        <Class IRI="#Edible"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasFoodProcess"/>
         <Class IRI="#Food"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasFoodProcess"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasFoodProcess"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasFoodProcess"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasFoodProcess"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasFoodProcess"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasFoodProcess"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasIngredient"/>
         <Class IRI="#Edible"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasIngredient"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasIngredient"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasNutrition"/>
         <Class IRI="#Ingredient"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasNutritionInEdible"/>
         <Class IRI="#Edible"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasNutritionInMenu"/>
         <Class IRI="#Menu"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasEdibleInMenu"/>
-            <Class IRI="#Edible"/>
-        </ObjectSomeValuesFrom>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasEdibleInMenu"/>
-            <Class IRI="#Edible"/>
-        </ObjectAllValuesFrom>
-    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasEdibleInMenu"/>
         <Class IRI="#Edible"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasEdibleInMenu"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasEdibleInMenu"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasFoodProcess"/>
@@ -5073,81 +1573,19 @@
         <Class IRI="#Ingredient"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasIngredient"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectSomeValuesFrom>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasIngredient"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNutrition"/>
-            <Class IRI="#Nutrition"/>
-        </ObjectAllValuesFrom>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasNutrition"/>
         <Class IRI="#Nutrition"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasNutrition"/>
-        <ObjectOneOf>
-            <NamedIndividual IRI="#Carbohydrate"/>
-            <NamedIndividual IRI="#Fat"/>
-            <NamedIndividual IRI="#Fiber"/>
-            <NamedIndividual IRI="#Protein"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectOneOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasNutritionInEdible"/>
         <Class IRI="#Nutrition"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasNutritionInEdible"/>
-        <ObjectOneOf>
-            <NamedIndividual IRI="#Carbohydrate"/>
-            <NamedIndividual IRI="#Fat"/>
-            <NamedIndividual IRI="#Fiber"/>
-            <NamedIndividual IRI="#Protein"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectOneOf>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasNutritionInMenu"/>
         <Class IRI="#Nutrition"/>
     </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasNutritionInMenu"/>
-        <ObjectOneOf>
-            <NamedIndividual IRI="#Carbohydrate"/>
-            <NamedIndividual IRI="#Fat"/>
-            <NamedIndividual IRI="#Fiber"/>
-            <NamedIndividual IRI="#Protein"/>
-            <NamedIndividual IRI="#Vitamin"/>
-        </ObjectOneOf>
-    </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#hasCal"/>
-        <Class IRI="#Edible"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasCal"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasCal"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasPrepared"/>
         <Class IRI="#Edible"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -5155,114 +1593,12 @@
         <Class IRI="#Food"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasPrepared"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasPrepared"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasPrepared"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasPrepared"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasPrepared"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasPrepared"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#hasPrice"/>
-        <Class IRI="#Edible"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasPrice"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasPrice"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasQuickPrepareTime"/>
         <Class IRI="#Edible"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasQuickPrepareTime"/>
         <Class IRI="#Food"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasQuickPrepareTime"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectSomeValuesFrom>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasQuickPrepareTime"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectSomeValuesFrom>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasQuickPrepareTime"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasFoodProcess"/>
-            <Class IRI="#FoodProcess"/>
-        </ObjectAllValuesFrom>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasQuickPrepareTime"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIngredient"/>
-            <Class IRI="#Ingredient"/>
-        </ObjectAllValuesFrom>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasQuickPrepareTime"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataSomeValuesFrom>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasQuickPrepareTime"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="#hasPrepared"/>
-            <Datatype abbreviatedIRI="xsd:boolean"/>
-        </DataAllValuesFrom>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#hasCal"/>
